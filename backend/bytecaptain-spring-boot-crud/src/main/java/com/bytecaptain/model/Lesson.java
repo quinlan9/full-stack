@@ -1,5 +1,7 @@
 package com.bytecaptain.model;
 
+//change javax to jakarta
+//Spring Boot 版本（3.1.4）已经迁移到使用 Jakarta EE 9 的命名空间（即 jakarta.* 而不是 javax.*）
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
