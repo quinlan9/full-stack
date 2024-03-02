@@ -36,11 +36,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+                 <!--删除这个movies的依赖.程序之间不要相互依赖.>
 		<dependency>
 			<groupId>qin.fei</groupId>
 			<artifactId>movies</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<!--要把下面这个jakarta依赖删除.spring-boot-starter-data-jpa 依赖，
+		这意味着这项目应该已经自动引入了所需的 JPA 相关依赖项，包括 jakarta.persistence-api.
+                因此，直接引用 jakarta.persistence-api 可能是多余的>
 		<dependency>
     		<groupId>jakarta.persistence</groupId>
    		 	<artifactId>jakarta.persistence-api</artifactId>
